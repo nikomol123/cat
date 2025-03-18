@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+
+body {
+    background-image: url(bg.jpeg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -700px;
+    font-family: "Nunito", sans-serif;
+    background-color: #44235e;
+}
+body.clean-room {
+    background-image: url(clean-room.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position-y: -200px;
+}
+
+
+button {
+    font-family: inherit;
+}
+
+*{
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+.status {
+    right: 130px;
+    position: absolute;
+    bottom: 100px;
+}
+
+.cat-block {
+    position: absolute;
+    left: 550px;
+    top: 100px;
+    height: 500px;
+    transition: 1s;
+}
+.cat {
+    height: 500px;
+
+}
+
+.cat-sleep {
+   transform: rotate3d(0, 0, 0.3, 60.3deg);
+    height: 300px;
+    left: 710px;
+    top: 140px;
+}
+.money {
+    position: absolute;
+    right: 270px;
+    top: 100px;
+    font-size: 50px;
+    background-color: green;
+    padding: 10px;
+    color: azure;
+    border-radius: 10px;
+    box-shadow: 3px -3px 4px 1px black;
+}
+.status-progress {
+    height: 40px;
+}
+.status-text {
+ position: absolute;
+ top: 7px;
+ left: 10px;
+ color: rgb(255, 194, 73);
+ text-shadow: 1px 1px 3px black;
+}
+.status-block {
+    position: relative;
+}
+
+.buy {
+    font-size: 25px;
+    position: absolute;
+}
+.buy:hover {
+cursor: pointer;
+}
+.burger {
+    height: 150px;
+}
+.product {
+    height: 130px;
+    position: absolute;
+    left: 930px;
+    top: 130px;
+}
+
+.shop {
+    width: 270px;
+    height: 600px;
+    background: url(fridge.png);
+    background-size: cover;
+    margin-left: -50px;
+    position: relative;
+}
+
+.shop:hover {
+ background-position-x: 373px;
+ width: 400px;
+}
+
+.apple {
+    width: 80px;
+position: absolute;
+left: 70px;
+top: 110px;
+/* transition: .1s; */
+}
+
+.shop-item {
+    opacity: .6;
+}
+
+.shop:hover .shop-item {
+    opacity: 1;
+}
+.burger1 {
+    width: 80px;
+    position: absolute;
+    left: 140px;
+    top: 130px;
+    }
+
+
+.present {
+    height: 100px;
+    position: absolute;
+    right: 100px;
+    top: 100px;
+    transition: 1s;
+    opacity: 0.2;
+}
+
+.water1 {
+width: 80px;
+    position: absolute;
+    left: 70px;
+    top: 160px;
+}
+
+.pillow {
+    width: 370px;
+    height: 130px;
+    background-color: rgb(206, 159, 159);
+    opacity: 10%;
+    position: absolute;
+    left: 859px;
+    top: 161px;
+    transform: rotate(10deg);
+    cursor: pointer;
+}
+
+
+.catToy {
+    position: absolute;
+    left: 400px;
+    top: 422px;
+    width: 150px;
+    transition: 1s;
+}
+
+
+.line {
+    width: 500px;
+    position: absolute;
+    top: -80px;
+    left: 550px;
+    height: 800px;
+    z-index: -1;
+    filter: brightness(50.5) ;
+    transform: scale(50%);
+    animation: 5s line infinite;
+    display: none;
+}
+
+@keyframes line {
+    0% {
+    transform: scale(50%);
+        
+    }
+    50% {
+    transform: scale(100%);
+
+    }
+    100% {
+        transform: scale(50%);
+            
+        }
+}
+
+
+
+.toilet-btn {
+    position: absolute;
+    top: 30px;
+    left: 20px;
+}
+
+
+.cat-toilet {
+left: -700px;
+}
+
+
+
+.brood {
+    position: absolute;
+    top: 212px;
+    opacity: 0%;
+    left: 228px;
+    width: 50px;
+    z-index: 10;
+
+}
+.brood2 {
+    left: 144px;
+}
+
+.brood3 {
+    top: 102px;
+    left: 136px;
+}
+
+.brood4 {
+    top: 286px;
+    left: 189px;
+}
+
+.brood5 {
+    top: 305px;
+    left: 304px;
+
+}
+
+.brood6 {
+       top: 398px;
+    left: 336px;
+}
+
+.clean-btn {
+    height: 50px;
+    width: 50px;
+    font-size: medium;
+    top: 28px;
+    left: 97px;
+    position: absolute;
+}
+
+
+.btn-clean {
+    position: absolute;
+    bottom: 10px;
+    left: 240px;
+     height: 250px;
+     width: 550px;
+     opacity: 10%;
+     border: none;
+     display: none;
+     background: linear-gradient(rgb(255, 166, 83), rgb(155, 155, 255));
+     border-radius: 50px;
+
+}
+
+
+
+
+
+body.clean-room .btn-clean {
+    display: flex;
+}
+
+body.clean-room .shop {
+    display: none;
+}
+
+
+body.clean-room .catToy {
+    display: none;
+}
+
+
+
+.water, .burger {
+    display: none;
+}
+
+.btn-clean.active {
+animation: 3s light infinite;
+}
+
+@keyframes light {
+    0% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 0.3;
+    }
+    0% {
+        opacity: 0;
+    }
+}

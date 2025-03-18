@@ -1,0 +1,97 @@
+@media screen and (max-width: 1400px) {
+    body {
+        background-position-y: -510px;
+        background-position-x: center;
+    }
+    .pillow {
+        left: 749px;
+        top: 231px;
+        opacity: 40%;
+    }
+}
+
+@media screen and (max-width: 1300px) {
+ 
+    .pillow {
+        left: 649px;
+        top: 161px;
+    }
+    .cat-block {
+        left: 300px;
+
+    }
+}
+
+@media screen and (max-width: 1000px) {
+   .cat-block {
+    left: 200px;
+   }
+   .pillow {
+    left: 52vw;
+    top: 2vw;
+    width: 25vw;
+}
+
+body {
+ background-position-y: -400px;
+}
+.status {
+    right: 30px;
+}
+.money {
+    right: 30px;
+    font-size: 30px;
+    top: 200px;
+}
+.status-progress {
+    width: 110px;
+}
+}
+
+@media screen and (max-width: 750px) {
+  .cat-block {
+    transform: scale(70%);
+    left: 100px;
+  } 
+  .shop {
+    transform: scale(0.6);
+  }
+  body {
+    background-position-y: -300px;
+    background-size: 170%;
+}
+}
+
+
+
+@media screen and (max-width: 550px) {
+    .money {
+        right: 20px;
+        font-size: 30px;
+        top: 31px
+    }
+    .present {
+    height: 69px;
+    position: absolute;
+    right: 20px;
+    top: 112px;
+    }
+    body {
+        background-position-y: -300px;
+        background-size: 310%;
+        background-position-x: -530px;
+    }
+    .catToy {
+        left: 70px;
+        top: 90vh;
+        width: 100px;
+    }
+    .shop {
+        transform: scale(0.8);
+    }
+    .cat-block {
+        transform: scale(80%);
+        left: -83px;
+        top: 49%;
+    }
+}
