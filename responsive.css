@@ -93,5 +93,57 @@ body {
         transform: scale(80%);
         left: -83px;
         top: 49%;
+        
+    }
+}
+@media screen and (max-width: 480px) {
+    .cat-block {
+        transform: scale(50%);
+        left: -23px;
+        top: 20%;
+        position: absolute;
+        
+        
+        
+    }
+    .status-text {
+        font-size: 14px;
+
+    }
+
+    .status-progress {
+        height: 32px;
+        width: 30vw;
+    }
+    .status {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-around;
+        width: 100%;
+        padding: 10px;
+        right: 0;
+        top: 100px;
+        height: 100px;
+        align-items: start;
+        z-index: 10;
+    }
+    .catToy {
+        left: 160px;
+        top: 64vh;
+    }
+    .shop {
+        top: 100px;
+        left: -40px;
+        transform:scale(50%)
+        
+    }
+    .pillow {
+        left: 42vw;
+        top: 96vw;
+        width: 64vw;
+        opacity: 0;
+    }
+    .shop:hover {
+        background-position-x: 309px;
     }
 }

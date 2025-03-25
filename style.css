@@ -22,6 +22,7 @@ button {
 }
 
 *{
+    user-select: none;
    margin: 0;
    padding: 0;
    box-sizing: border-box;
@@ -201,8 +202,15 @@ width: 80px;
     position: absolute;
     top: 30px;
     left: 20px;
+    background: linear-gradient(45deg, skyblue, white);
+    border: none;
+    padding: 5px;
+    transition: 0.4s;
 }
-
+.toilet-btn:hover {
+    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.377);
+    cursor: pointer;
+} 
 
 .cat-toilet {
 left: -700px;
@@ -251,6 +259,15 @@ left: -700px;
     top: 28px;
     left: 97px;
     position: absolute;
+    /* background: linear-gradient(red,orange,yellow,green,blue); */
+    background: linear-gradient(45deg, skyblue, white);
+    border: none;
+    transition: 0.4s;
+}
+
+.clean-btn:hover {
+    box-shadow: 0 0 10px 7px rgba(0, 0, 0, 0.377);
+    cursor: pointer;
 }
 
 
@@ -266,9 +283,8 @@ left: -700px;
      background: linear-gradient(rgb(255, 166, 83), rgb(155, 155, 255));
      border-radius: 50px;
 
+
 }
-
-
 
 
 
@@ -306,3 +322,19 @@ animation: 3s light infinite;
         opacity: 0;
     }
 }
+
+.coca-cola {
+    position: absolute;
+    height: 80px;
+    top: 171px;
+    left: 143px;
+}
+
+
+.morkov {
+    position: absolute;
+    height: 72px;
+    top: 240px;
+    left: 77px;
+}
+

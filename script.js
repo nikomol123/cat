@@ -105,19 +105,30 @@ $ ('.water1').click(function () {
     buy('water', 10)
 })
 
+$ ('.coca-cola').click(function () {
+    buy('coca-cola', 15)
+})
+
+
+$ ('.morkov').click(function () {
+    buy('morkov', 10)
+})
 
 
 
 function buy(product, price) {
     let status = catStatus.food
-     if (['burger', 'apple'].includes(product) ) {
+
+     if (['burger', 'apple','morkov'].includes(product) ) {
         status = catStatus.food
      }
 
 
-     if (['water'].includes(product) ) {
+     if (['water', 'coca-cola'].includes(product) ) {
         status = catStatus.water
      }
+
+   
 
 
 
@@ -139,8 +150,22 @@ function buy(product, price) {
             catStatus.food += 20
         }
 
+
+        else if (product == 'morkov') {
+            newImg = $ (' <img class="shop-item morkov" src="morkov.png" alt="">')
+            $('body').append(newImg)
+            catStatus.food += 20
+        }
+
+
         else if (product == 'water') {
             newImg = $ (' <img class="shop-item water1" src="water.webp" alt="">')
+            $('body').append(newImg)
+            catStatus.water += 20
+        }
+
+        else if (product == 'coca-cola') {
+            newImg = $ (' <img class="shop-item water1" src="koka-kola-033-l.-47739246072713.png" alt="">')
             $('body').append(newImg)
             catStatus.water += 20
         }
