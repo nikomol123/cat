@@ -21,6 +21,11 @@ $ ('.status-progress').eq(3).attr('value', catStatus.game)
 $ ('.status-progress').eq(4).attr('value', catStatus.toilet)
 $ ('.status-progress').eq(5).attr('value', catStatus.clean)
 
+let money = localStorage.getItem('money') || 100
+
+$ ('.money').text(money)
+
+
 setInterval(
     function () {
 
@@ -209,6 +214,7 @@ $ ('.present').click(function () {
     let money = +$ ('.money').text()
     money +=10
     $ ('.money').text(money)
+    localStorage.setItem('money',money)
 })
 
 let intSleep
@@ -241,6 +247,7 @@ $ ('.pillow').click(function () {
  $ ('.catToy').click(function () {
     $ ('.catToy').css('left',"600px")
     $ ('.catToy').css('top','220px')
+    $ ('.catToy').css('animation','3s fish infinite')
     $ ('.line').css('display','block')
     catGame = true
 
@@ -249,13 +256,17 @@ $ ('.pillow').click(function () {
             $ ('.status-progress').eq(3).attr('value', catStatus.game)
     }, 1000)
 
+
+
     setInterval (function () {
         $ ('.catToy').css('left',"400px")
     $ ('.catToy').css('top','422px')
     $ ('.line').css('display','none')
+    $ ('.catToy').css('animation','')
     clearInterval(intGame)
     catGame = false
-    }, 5000)
+
+    }, 7000)
 
 })
 
@@ -350,5 +361,11 @@ $ ('.btn-clean').click (function () {
 })
 
 
-
+$ ('.money').click(function () {
+    let answer = confirm ('ви точно хочете почати спочатку?')
+    if (answer == true) {
+        localStorage.clear()
+        location.reload()
+    }
+})
 

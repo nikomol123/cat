@@ -144,6 +144,7 @@ body {
         opacity: 0;
     }
     .shop:hover {
-        background-position-x: 309px;
+        /* background-position-x: 309px; */
+        width: 320px;
     }
 }
