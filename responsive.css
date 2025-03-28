@@ -147,4 +147,8 @@ body {
         /* background-position-x: 309px; */
         width: 320px;
     }
+    .present {
+        right: 120px;
+        top: 14px;
+    }
 }
