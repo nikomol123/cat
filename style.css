@@ -55,12 +55,28 @@ button {
     position: absolute;
     right: 270px;
     top: 100px;
-    font-size: 50px;
-    background-color: green;
-    padding: 10px;
+    font-size: 40px;
+    background: url(./green.png);
+    background-size: 100%;
+    padding: 10px 30px;
     color: azure;
     border-radius: 10px;
-    box-shadow: 3px -3px 4px 1px black;
+    /* box-shadow: 3px -3px 4px 1px black; */
+    filter: drop-shadow(0 0 7px rgb(173, 255, 111));
+    text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.633);
+    background-repeat: no-repeat;
+    height: 60px;
+    background-position: center;
+    justify-content: center;
+    align-content: center;
+    display: flex;
+    line-height: 38px;
+    transition: 0.5s;
+}
+.money:hover {
+    transform: scale(120%);
+
+
 }
 .status-progress {
     height: 40px;
@@ -361,3 +377,8 @@ animation: 3s light infinite;
     left: 77px;
 }
 
+
+.catToyActive {
+    left: 600px;
+    top: 220px;
+}

@@ -175,13 +175,26 @@ function buy(product, price) {
             catStatus.water += 20
         }
 
+        let leftApple = parseInt( $ (newImg).css('left'))-270 //*
+        let topApple = parseFloat( $ (newImg).css('top'))
+
+        let leftCat = parseInt( $ ('.cat-block').css('left'))
+        let topCat = parseFloat( $ ('.cat-block').css('top'))+70
+
+        let pxL = (leftCat - leftApple) / 100
+        let pxT = (topCat - topApple) / 100
+
+
+
        let int = setInterval ( 
         function () {
+            
             let leftApple = parseInt( $ (newImg).css('left'))
             let topApple = parseFloat( $ (newImg).css('top'))
-            $ (newImg).css('left', leftApple+5)
-            $ (newImg).css('top', topApple+0.75)
-            if (leftApple >= 730) {
+
+            $ (newImg).css('left', leftApple+pxL)
+            $ (newImg).css('top', topApple+pxT)
+            if (leftApple >= leftCat+170) {
                 $ (newImg).css('display', 'none')
                 clearInterval(int)
             }
@@ -212,8 +225,19 @@ $ ('.present').click(function () {
     }
     $ ('.present').css('opacity',"0.2")
     let money = +$ ('.money').text()
-    money +=10
-    $ ('.money').text(money)
+    let finishMoney = money + 10
+    let int = setInterval(
+        function () {
+            let money = +$ ('.money').text()
+            money +=1
+
+            $ ('.money').text(money)
+            if (money == finishMoney) {
+                clearInterval(int)
+            }
+        }, 
+        100    )
+    // $ ('.money').text(money)
     localStorage.setItem('money',money)
 })
 
@@ -245,8 +269,13 @@ $ ('.pillow').click(function () {
     }
 })
  $ ('.catToy').click(function () {
-    $ ('.catToy').css('left',"600px")
-    $ ('.catToy').css('top','220px')
+    //     left: 110px;
+    // top: 522px;
+    // $ ('.catToy').css('left',"600px")
+    // $ ('.catToy').css('top','220px')
+    $ ('.catToy').addClass('catToyActive')
+
+
     $ ('.catToy').css('animation','3s fish infinite')
     $ ('.line').css('display','block')
     catGame = true
@@ -259,8 +288,13 @@ $ ('.pillow').click(function () {
 
 
     setInterval (function () {
-        $ ('.catToy').css('left',"400px")
-    $ ('.catToy').css('top','422px')
+    
+    //     $ ('.catToy').css('left',"400px")
+    // $ ('.catToy').css('top','422px')
+
+    $ ('.catToy').removeClass('catToyActive')
+
+
     $ ('.line').css('display','none')
     $ ('.catToy').css('animation','')
     clearInterval(intGame)
