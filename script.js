@@ -353,9 +353,11 @@ $ ('.btn-clean').click (function () {
     $ ('.btn-clean').removeClass('active')
 
     $ ('.clean-btn').attr('disabled', true)
-    $ ('.cat-block').css('top','87px')
-    $ ('.cat-block').css('left','230px')
-    $ ('.cat-block').css('height','300px')
+    // $ ('.cat-block').css('top','87px')
+    // $ ('.cat-block').css('left','230px')
+    // $ ('.cat-block').css('height','300px')
+
+    $ ('.cat-block').addClass('catClean')
 
     $ ('.cat').attr('src', 'cat-half2.png')
     $ ('.cat').css('position', 'absolute')
@@ -370,9 +372,8 @@ $ ('.btn-clean').click (function () {
     }, 1000)
 
     setTimeout (function () {
-        $ ('.cat-block').css('top','100px')
-        $ ('.cat-block').css('left','550px')
-        $ ('.cat-block').css('height','500px')
+        $ ('.cat-block').removeClass('catClean')
+
         $ ('.clean-btn').attr('disabled', false)
     
         $ ('.cat').attr('src', 'pngtree-adorable-golden-cat-clipart-standing-illustration-png-image_14489824.png')
@@ -380,7 +381,7 @@ $ ('.btn-clean').click (function () {
         $ ('.cat').css('left', 'auto')
         $ ('.cat').css('height', '500px')
         $ ('.cat').css('top', 'auto')
-    },6000)
+    },60000)
     
 
 

@@ -382,3 +382,9 @@ animation: 3s light infinite;
     left: 600px;
     top: 220px;
 }
+
+.catClean {
+    top: 87px;
+    left: 230px;
+    height: 300px;
+}

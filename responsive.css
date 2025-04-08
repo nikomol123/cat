@@ -8,6 +8,10 @@
         top: 231px;
         opacity: 40%;
     }
+    body.clean-room {
+        background-image: url(clean-room.jpg);
+        background-position-y: -120px;
+    }
 }
 
 @media screen and (max-width: 1300px) {
@@ -80,6 +84,22 @@ body {
         background-position-y: -300px;
         background-size: 310%;
         background-position-x: -530px;
+    }
+    body.clean-room {
+        background-image: url(clean-room.jpg);
+     
+        background-position-x: -210px;
+        background-position-y: -150px;
+        background-size: 340%;
+    }
+    .btn-clean {
+        left: 0;
+        width: 100%;
+    }
+    .catClean {
+        top: 26%!important;
+        left: 50px!important;
+        height: 300px;
     }
     .catToy {
         left: 70px;
