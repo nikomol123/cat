@@ -381,7 +381,7 @@ $ ('.btn-clean').click (function () {
         $ ('.cat').css('left', 'auto')
         $ ('.cat').css('height', '500px')
         $ ('.cat').css('top', 'auto')
-    },60000)
+    },6000)
     
 
 
