@@ -326,6 +326,32 @@ left: -700px!important;
 }
 
 
+.name-save {
+    background-color: rgb(68, 218, 31);
+    border: none;
+    color: white;
+    padding: 4px 15px;
+    transition: 1s;
+}
+.name-save:hover {
+    cursor: pointer;
+    background-color: rgb(43, 143, 32);
+
+}
+.name {
+    height: 100px;
+    position: absolute;
+    background-color: white;
+    top: 10px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    left: calc(50vw - 250px);
+    padding: 15px;
+    gap: 10px;
+    border-radius: 5px;
+    width: 500px;
+}
 
 body.clean-room .btn-clean {
     display: flex;

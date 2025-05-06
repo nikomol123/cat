@@ -69,6 +69,23 @@ body {
 
 
 @media screen and (max-width: 550px) {
+    .name {
+    width: 95%;
+     left: 2.5%;
+     /* padding: 4px!important; */
+     height: 55px;
+   
+
+    }
+    .text {
+    width: 110px;
+
+    }
+    .your-name {
+     font-size: 14px;
+    
+
+    }
     .money {
         right: 20px;
         font-size: 30px;
